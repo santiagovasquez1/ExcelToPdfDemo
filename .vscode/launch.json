@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug ExcelToHtml CLI",
+      "type": "debugpy",             // O "debugpy" si lo prefieres
+      "request": "launch",
+      "program": "${workspaceFolder}/src/interfaces/cli.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}" 
+      },
+      "args": [
+        "assets/PlantillaExtraccionCondicionesParticularesAdendas.xlsx",
+        "assets/PlantillaExtraccionCondicionesParticularesAdendas.html"
+      ],
+      "justMyCode": true
+    }
+  ]
+}
