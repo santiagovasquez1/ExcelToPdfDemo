@@ -3,19 +3,26 @@
   "configurations": [
     {
       "name": "Debug ExcelToHtml CLI",
-      "type": "debugpy",             // O "debugpy" si lo prefieres
+      "type": "debugpy",
       "request": "launch",
       "program": "${workspaceFolder}/src/interfaces/cli.py",
       "console": "integratedTerminal",
       "cwd": "${workspaceFolder}",
       "env": {
-        "PYTHONPATH": "${workspaceFolder}" 
+        "PYTHONPATH": "${workspaceFolder}"
       },
       "args": [
-        "assets/Doc463152398_Análisis de riesgos en contratos CRW80081.xlsx",
-        "assets/Doc463152398_Análisis de riesgos en contratos CRW80081.html"
+        "${workspaceFolder}/assets/${input:fileName}.xlsx",
+        "${workspaceFolder}/assets/${input:fileName}.html"
       ],
       "justMyCode": true
+    }
+  ],
+  "inputs": [
+    {
+      "id": "fileName",
+      "type": "promptString",
+      "description": "Ingresa el nombre del archivo (sin extensión) a procesar"
     }
   ]
 }
