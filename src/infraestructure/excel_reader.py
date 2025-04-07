@@ -53,12 +53,12 @@ class ExcelReader:
             table_data = []
             for row in ws.iter_rows():
                 row_data = []
-                for cell in row:
+                for col_index, cell in enumerate(row, start=1):
                     row_data.append(
                         CellData(
                             value=cell.value,
                             row=cell.row,
-                            col=cell.col_idx,
+                            col=col_index,  # Usamos el índice proporcionado por enumerate
                         )
                     )
                 table_data.append(row_data)

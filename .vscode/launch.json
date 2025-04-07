@@ -12,8 +12,8 @@
         "PYTHONPATH": "${workspaceFolder}" 
       },
       "args": [
-        "assets/PlantillaExtraccionCondicionesParticularesAdendas.xlsx",
-        "assets/PlantillaExtraccionCondicionesParticularesAdendas.html"
+        "assets/Doc463152398_Análisis de riesgos en contratos CRW80081.xlsx",
+        "assets/Doc463152398_Análisis de riesgos en contratos CRW80081.html"
       ],
       "justMyCode": true
     }
